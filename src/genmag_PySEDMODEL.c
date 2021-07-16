@@ -8,7 +8,8 @@
 
   Each PySEDMODEL is associated with a separate gensed_[model].py :
      gensed_BYOSED.py : Build Your Own SED  (J.Pierel)
-     gensed_SNEMO.py  : SNFactory model (??)
+     gensed_SNEMO.py  : SNFactory model (Ben Rose)
+     gensed_BAYESN.py : BayeSN model (Stephen Thorp, Gautham Narayan, Kaisey Mandel)
 
   Initial motivation is to build underlying "true" SED model to
   test SNIa model training. However, this function could in 
@@ -76,6 +77,7 @@ void load_PySEDMODEL_CHOICE_LIST(void) {
   // Used by sim, parsing, etc ...
   sprintf(PySEDMODEL_CHOICE_LIST[N], "%s", MODEL_NAME_BYOSED); N++ ;
   sprintf(PySEDMODEL_CHOICE_LIST[N], "%s", MODEL_NAME_SNEMO ); N++ ;
+  sprintf(PySEDMODEL_CHOICE_LIST[N], "%s", MODEL_NAME_BAYESN ); N++ ;
 
   if ( N != NCHOICE_PySEDMODEL ) {
     sprintf(c1err,"Expected %d PySEDMODEL choices");

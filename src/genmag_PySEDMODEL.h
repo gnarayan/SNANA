@@ -2,7 +2,7 @@
 // Nov 20 2020: MXPAR_PySEDMODEL -> 20 (was 10) for SNEMO
 
 // define pre-processor command to use python interface
-#define USE_PYTHON       
+#define USE_PYTHONxxx       
 
 
 // ===========================================
@@ -14,7 +14,8 @@
 
 #define MODEL_NAME_BYOSED   "BYOSED"
 #define MODEL_NAME_SNEMO    "SNEMO"
-#define NCHOICE_PySEDMODEL  2
+#define MODEL_NAME_BAYESN   "BAYESN"
+#define NCHOICE_PySEDMODEL  3
 char    PySEDMODEL_CHOICE_LIST[NCHOICE_PySEDMODEL][12] ;
 
 // store inputs from init_genmag_PySEDMODEL
